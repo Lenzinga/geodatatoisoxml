@@ -27,7 +27,7 @@ def process_shapefile(shp_path):
     pfd_elements = []
 
     for idx, row in gdf.iterrows():
-        polygon_name = row['SCHLAGBEZ'].replace(".", "_").replace(" ", "_").replace("(", "").replace(")", "")
+        polygon_name = row['Name'].replace(".", "_").replace(" ", "_").replace("(", "").replace(")", "")
 
         # Create PFD element for each feature
         pfd_element = ET.Element("PFD", {
@@ -84,32 +84,31 @@ def save_xml(tree, output_path):
     tree.write(output_path, encoding="utf-8", xml_declaration=True)
 
 # Streamlit app
-st.set_page_config(page_title="ELAN to ISOXML Converter", layout="centered", page_icon="📍")
-st.title("ELAN to ISOXML Converter")
-
+st.set_page_config(page_title="iBALIS to ISOXML Converter", layout="centered", page_icon="📍")
+st.title("iBALIS to ISOXML Converter")
 
 # File uploader
-uploaded_zip = st.file_uploader("Hier die zip-Datei von ELAN hochladen", type="zip")
+uploaded_zip = st.file_uploader("Hier die zip-Datei von iBALIS hochladen", type="zip")
 
 if uploaded_zip is not None:
     # Create a temporary directory
     with zipfile.ZipFile(uploaded_zip, "r") as zip_ref:
         zip_ref.extractall("temp_dir")
     
-    # Look for the shapefile in the extracted files
+    # Look for the shapefiles with 'Feldstueck' in the name in the extracted files
     shp_path = None
     for root, _, files in os.walk("temp_dir"):
         for file in files:
-            if file.endswith(".shp"):
+            if file.endswith(".shp") and "Feldstueck" in file:
                 shp_path = os.path.join(root, file)
                 break
     
     if shp_path is None:
-        st.error("No .shp file found in the uploaded ZIP.")
+        st.error("No 'Feldstueck' shapefile found in the uploaded ZIP.")
     else:
         st.success(f"Shapefile found: {shp_path}")
         
-        # Process the shapefile and convert it to XML, get EPSG code, SCHLAGBEZ values, and geodata
+        # Process the shapefile and convert it to XML, get EPSG code, Name values, and geodata
         xml_tree, epsg_code = process_shapefile(shp_path)
         
         # Display the EPSG code
