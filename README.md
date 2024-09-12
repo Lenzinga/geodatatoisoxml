@@ -18,4 +18,5 @@ A simple Python application to convert geodata from various applications, mostly
 ## What will be done in the future
 
 - **FIONA to ISOXML** Convert Data from FIONA to ISOXML format. (BW, Germany)
+- **FENDT KML Output to ISOXML** Convert Data from FENDT KML Output to ISOXML format.
 
