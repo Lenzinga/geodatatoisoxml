@@ -13,6 +13,7 @@ A simple Python application to convert geodata from various applications, mostly
 - **AMA to ISOXML:** Convert Data from EAMA to ISOXML format. (Austria)
 - **ELAN to ISOXML** Convert Data from ELAN to ISOXML format. (NRW, Germany)
 - **iBALIS to ISOXML** Convert Data from iBALIS to ISOXML format. (Bavaria, Germany)
+    - Uses "Feldstueck" file not "Nutzung" 
 
 ## What will be done in the future
 
