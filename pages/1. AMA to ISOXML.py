@@ -14,8 +14,8 @@ def process_shapefile(shp_path):
     root = ET.Element("ISO11783_TaskData", {
         "VersionMajor": "4",
         "VersionMinor": "0",
-        "ManagementSoftwareManufacturer": "Lorenz Bauer",
-        "ManagementSoftwareVersion": "01.12.2023",
+        "ManagementSoftwareManufacturer": "Geodata to ISOXML Converter",
+        "ManagementSoftwareVersion": "12.09.2024",
         "DataTransferOrigin": "1"
     })
 
