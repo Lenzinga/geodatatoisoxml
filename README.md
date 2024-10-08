@@ -23,5 +23,5 @@ https://geodatatoisoxml.streamlit.app/
 - **FIONA to ISOXML** Convert Data from FIONA to ISOXML format. (BW, Germany)
 - **FENDT KML Output to ISOXML** Convert Data from FENDT KML Output to ISOXML format.
 - **AGF-Data to ISOXML** Convert Data from AGF to ISOXML format.
-- **BEV Austria Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austira
+- **BEV Austria Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austria)
 
