@@ -102,7 +102,6 @@ def save_xml(tree, output_path):
 st.set_page_config(page_title="AMA to ISOXML Converter", layout="centered", page_icon="📍")
 st.title("AMA to ISOXML Converter")
 
-
 # File uploader
 uploaded_zip = st.file_uploader("Hier die zip-Datei von EAMA hochladen", type="zip")
 
@@ -115,12 +114,12 @@ if uploaded_zip is not None:
     shp_path = None
     for root, _, files in os.walk("temp_dir"):
         for file in files:
-            if file.endswith(".shp"):
+            if file.endswith(".shp") and file[-10:-4] == "GST_V2":
                 shp_path = os.path.join(root, file)
                 break
     
     if shp_path is None:
-        st.error("No .shp file found in the uploaded ZIP.")
+        st.error("No matching .shp file found in the uploaded ZIP.")
     else:
         st.success(f"Shapefile found: {shp_path}")
         
