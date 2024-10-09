@@ -99,11 +99,11 @@ def save_xml(tree, output_path):
         f.write(pretty_xml_as_string)
 
 # Streamlit app
-st.set_page_config(page_title="AMA to ISOXML Converter", layout="centered", page_icon="📍")
-st.title("AMA to ISOXML Converter")
+st.set_page_config(page_title="BEV single ZIP to ISOXML Converter", layout="centered", page_icon="📍")
+st.title("BEV single ZIP to ISOXML Converter")
 
 # File uploader
-uploaded_zip = st.file_uploader("Hier die zip-Datei von EAMA hochladen", type="zip")
+uploaded_zip = st.file_uploader("Hier eine zip-Datei (nur eine ZIP (z.B. 100.zip)) von BEV hochladen", type="zip")
 
 if uploaded_zip is not None:
     # Create a temporary directory
