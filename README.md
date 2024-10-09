@@ -16,7 +16,10 @@ https://geodatatoisoxml.streamlit.app/
 - **AMA to ISOXML:** Convert Data from EAMA to ISOXML format. (Austria)
 - **ELAN to ISOXML** Convert Data from ELAN to ISOXML format. (NRW, Germany)
 - **iBALIS to ISOXML** Convert Data from iBALIS to ISOXML format. (Bavaria, Germany)
-    - Uses "Feldstueck" file, not "Nutzung" 
+    - Uses "Feldstueck" file, not "Nutzung"
+- **BEV Austria Single Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austria)
+    - Searchs for ...GST_V2.shp in the ZIP-file
+    - Only upload one ZIP-File, not multiple (not yet supported)
 
 ## What will be done in the future
 
@@ -24,4 +27,5 @@ https://geodatatoisoxml.streamlit.app/
 - **FENDT KML Output to ISOXML** Convert Data from FENDT KML Output to ISOXML format.
 - **AGF-Data to ISOXML** Convert Data from AGF to ISOXML format.
 - **BEV Austria Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austria)
+    - Support for multiple ZIP-Files (for downloading fields from multiple KG's)
 
