@@ -20,10 +20,10 @@ https://geodatatoisoxml.streamlit.app/
 - **BEV Austria Single Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austria)
     - Searchs for ...GST_V2.shp in the ZIP-file
     - Only upload one ZIP-File, not multiple (not yet supported)
+- **FIONA to ISOXML** Convert Data from FIONA to ISOXML format. (BW, Germany)
 
 ## What will be done in the future
 
-- **FIONA to ISOXML** Convert Data from FIONA to ISOXML format. (BW, Germany)
 - **FENDT KML Output to ISOXML** Convert Data from FENDT KML Output to ISOXML format.
 - **AGF-Data to ISOXML** Convert Data from AGF to ISOXML format.
 - **BEV Austria Data to ISOXML** Convert Data from BEV Austria to ISOXML format. (Austria)
