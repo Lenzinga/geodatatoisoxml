@@ -1,6 +1,6 @@
 # Geodata to ISOXML (ISO 11783)
 
-A simple Python application to convert geodata from various applications, mostly software that farmers use for reporting their planted crops to the government, to ISOXML format (ISO 11783).
+A simple Python application to convert geodata from various applications, mostly farm managment software, to ISOXML format (ISO 11783).
 
 Available here:
 https://geodatatoisoxml.streamlit.app/
