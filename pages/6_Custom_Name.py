@@ -16,7 +16,7 @@ def process_shapefile(shp_path):
         "VersionMajor": "4",
         "VersionMinor": "0",
         "ManagementSoftwareManufacturer": "Geodata to ISOXML Converter",
-        "ManagementSoftwareVersion": "12.09.2024",
+        "ManagementSoftwareVersion": "30.02.2025",
         "DataTransferOrigin": "1"
     })
 
@@ -97,8 +97,8 @@ def save_xml(tree, output_path):
         f.write(pretty_xml_as_string)
 
 # Streamlit app
-st.set_page_config(page_title="CustomName to ISOXML Converter", layout="centered", page_icon="📍")
-st.title("CustomName to ISOXML Converter")
+st.set_page_config(page_title="AMA_V2 to ISOXML Converter", layout="centered", page_icon="📍")
+st.title("AMA_V2 to ISOXML Converter")
 
 
 # File uploader
