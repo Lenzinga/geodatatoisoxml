@@ -58,7 +58,7 @@ def process_shapefile(shp_path):
                 })
         elif row.geometry.geom_type == 'MultiPolygon':
             # Handle MultiPolygons by taking only the exterior of each polygon
-            for polygon in row.geometry:
+            for polygon in row.geometry.geoms:
                 exterior_coords = polygon.exterior.coords
                 for i, coord in enumerate(exterior_coords):
                     ET.SubElement(lsg_element, "PNT", {
@@ -66,7 +66,7 @@ def process_shapefile(shp_path):
                         "C": str(coord[1]),  # Latitude
                         "D": str(coord[0])   # Longitude
                     })
-
+        
         # Add the PFD element to the list
         pfd_elements.append(pfd_element)
 
