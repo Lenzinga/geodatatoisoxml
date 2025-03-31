@@ -22,6 +22,8 @@ https://geodatatoisoxml.streamlit.app/
 - **ELAN to ISOXML** Convert Data from ELAN to ISOXML format. (NRW, Germany)
 - **FIONA to ISOXML** Convert Data from FIONA to ISOXML format. (BW, Germany)
 - **florlp.rlp to ISOXML** Convert Data from florlp.rlp to ISOXML format. (RP, Germany)
+- **SHP-Analyser** Does scan the uploaded SHP and shows its propterties.
+- **Custom ISOXML Creator** Scans the uploaded SHP file and shows its properties. User can choose which variable to use as the Name of the Polygon with the option to use an ID.
 
 ## What will be done in the future
 
